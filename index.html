@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>About Me Online Page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="IbnElhadj Mohamed Ibrahim">
+        <meta name="keywords" content="Cv, Resume Cv, Resume, Portfolio, About Me, About, Website, Site, Curriculum vitae">
+        <meta name="description" content="My Online Page For gets some Information About Me.">
+        <!-- include the termynal stylesheet -->
+        <link rel="stylesheet" href="termynal.css">
+        <!-- some custom styles for the page -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+        <style>
+            body {
+                --color-bg: #ddd;
+                --color-text: #1a1e24;
+                --color-text-subtle: #D76D77;
+
+                padding: 0; margin: 0;
+                background: -webkit-linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+                width: 100%;
+                min-height: 100vh;
+                display: -webkit-box; display: -ms-flexbox; display: flex;
+                -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+                -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+                -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- the termynal container -->
+        <div id="termynal"></div>
+
+        <!-- include and initialise termynal.js -->
+        <script src="termynal.js"></script>
+        <script>
+          var termynal = new Termynal('#termynal', {
+            typeDelay: 40,
+            lineDelay: 700, 
+            lineData: [
+              { type: 'input', prompt: '▋ barhouum7@MyGitHub/:~$', value: 'whoami' },
+              { value: 'Hello there, my name is Ibnelhadj Mohamed Ben Salah Ibrahim.' },
+                { type: 'input',  typeDelay: 100, prompt: '>>>  Wish you enjoying with a brief about me.'},
+                { value: `['❤' '❤' '❤' '❤' '❤']` },
+                { type: 'progress', progressChar: '█' },
+              { type: 'input',  typeDelay: 50, value: '   People find me to be an upbeat, self-motivated Student with over 5 years of experience in coding, team player with excellent communication skills.' },
+              { type: 'input', prompt:'▲', value: '1st-year IT student passionate about Penetration Testing ( RED TEAM ).' },
+              { type: 'input', prompt: '▲', value: `Proven project leader.` },
+              { type: 'input', prompt: '▲', value: 'An active member of ATAST student section Club.' },
+              { type: 'input', prompt: '▲', value: 'Speaker at 2018 <i>“IFEST² International Science Festival”</i>.' },
+              { type: 'input', prompt: '▲', value: 'If you would like to get in touch with me, whether it be for tech support, to help you build an app, talk to me about a project collaboration or to just say hi !' },
+                { type: 'input', prompt: '▲', value: 'Feel free to send me an email or take a look at my LinkedIn profile !'},
+                { type: 'input', prompt: '▲', value: 'My email address is: “ bb.med2000@gmail.com ” and my LinkedIn is “   https://www.linkedin.com/in/ibrahimbs/  ”.'},
+                { type: 'input', prompt: '▲', value: 'You may also check my CV here !  “  https://www.about.me/Ibrahim  ”.' },
+                { type: 'input', prompt: '▲', value: 'I also invite you to take a look at my GitHub Projects ! “  https://github.com/barhouum7  ” ' },
+                { type: 'input', prompt: '▋ barhouum7@MyGitHub/:~$', value: '  Cheers !  :)' },
+            ]
+          });
+        </script>
+    </body>
+</html>
